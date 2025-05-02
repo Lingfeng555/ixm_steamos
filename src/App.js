@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Features from './components/Features';
 import Performance from './components/Performance';
 import Hardware from './components/Hardware';
+import Support from './components/Support';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Features />
         <Performance />
         <Hardware />
+        <Support />
         <a href="#download" className="cta-button">
           Download SteamOS
         </a>

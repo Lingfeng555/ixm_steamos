@@ -288,3 +288,130 @@
   left: 0;
   top: 0.5rem;
 }
+
+.tagline {
+  font-size: 2rem;
+  color: #66c0f4;
+  margin: 2rem 0;
+  text-shadow: 0 0 15px rgba(102, 192, 244, 0.4);
+  font-weight: 500;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.tagline-sub {
+  font-size: 1.3rem;
+  color: #c7d5e0;
+  margin: 1rem 0 3rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: 1rem auto 3rem;
+  opacity: 0.9;
+}
+
+.support-section {
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.support-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.support-subtitle {
+  color: #66c0f4;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background: rgba(27, 40, 56, 0.8);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 192, 244, 0.2);
+}
+
+.faq-question {
+  color: #66c0f4;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.faq-answer {
+  color: #c7d5e0;
+  line-height: 1.6;
+}
+
+.contact-form {
+  background: rgba(27, 40, 56, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #66c0f4;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+}
+
+.submit-button {
+  background: linear-gradient(to right, #66c0f4, #1b2838);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.submit-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(102, 192, 244, 0.4);
+}
+
+@media (max-width: 768px) {
+  .support-container {
+    grid-template-columns: 1fr;
+  }
+}
