@@ -4,6 +4,41 @@
   color: #ffffff;
 }
 
+.steam-header {
+  background: linear-gradient(180deg, #171a21 0%, #1b2838 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.section-title {
+  color: #66c0f4;
+  font-size: 2.5rem;
+  margin: 3rem 0 2rem;
+  text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+}
+
+.cta-button {
+  background: linear-gradient(to right, #66c0f4, #1b2838);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(102, 192, 244, 0.4);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,16 +72,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.steam-header {
-  background: linear-gradient(180deg, #171a21 0%, #1b2838 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
 }
 
 .steam-logo {
@@ -100,31 +125,6 @@
 .feature-description {
   color: #c7d5e0;
   line-height: 1.6;
-}
-
-.cta-button {
-  background: linear-gradient(to right, #66c0f4, #1b2838);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  margin-top: 2rem;
-  text-decoration: none;
-}
-
-.cta-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(102, 192, 244, 0.4);
-}
-
-.section-title {
-  color: #66c0f4;
-  font-size: 2.5rem;
-  margin: 3rem 0 2rem;
-  text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
 }
 
 .performance-section {

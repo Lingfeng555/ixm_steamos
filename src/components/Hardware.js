@@ -1,21 +1,22 @@
 import React from 'react';
+import styles from './Hardware.module.css';
 
 const Hardware = () => {
   return (
-    <section className="hardware-section">
-      <h2 className="section-title">Supported Hardware</h2>
-      <p className="tagline-sub">
+    <section className={styles['hardware-section']}>
+      <h2 className={styles['section-title']}>Supported Hardware</h2>
+      <p className={styles['tagline-sub']}>
         From powerful gaming rigs to pocket-sized devices - Your games, your way
       </p>
-      <div className="hardware-grid">
-        <div className="hardware-card">
-          <div className="hardware-icon">
-            <div className="hardware-placeholder">
+      <div className={styles['hardware-grid']}>
+        <div className={styles['hardware-card']}>
+          <div className={styles['hardware-icon']}>
+            <div className={styles['hardware-placeholder']}>
               [Raspberry Pi Icon]
             </div>
           </div>
-          <h3 className="hardware-title">Raspberry Pi</h3>
-          <ul className="hardware-specs">
+          <h3 className={styles['hardware-title']}>Raspberry Pi</h3>
+          <ul className={styles['hardware-specs']}>
             <li>Raspberry Pi 4 Model B</li>
             <li>2GB/4GB/8GB RAM variants</li>
             <li>Optimal for retro gaming</li>
@@ -23,14 +24,14 @@ const Hardware = () => {
           </ul>
         </div>
 
-        <div className="hardware-card">
-          <div className="hardware-icon">
-            <div className="hardware-placeholder">
+        <div className={styles['hardware-card']}>
+          <div className={styles['hardware-icon']}>
+            <div className={styles['hardware-placeholder']}>
               [Jetson Icon]
             </div>
           </div>
-          <h3 className="hardware-title">NVIDIA Jetson</h3>
-          <ul className="hardware-specs">
+          <h3 className={styles['hardware-title']}>NVIDIA Jetson</h3>
+          <ul className={styles['hardware-specs']}>
             <li>Jetson Nano/Xavier NX</li>
             <li>AI-powered gaming features</li>
             <li>CUDA-accelerated performance</li>
@@ -38,14 +39,14 @@ const Hardware = () => {
           </ul>
         </div>
 
-        <div className="hardware-card">
-          <div className="hardware-icon">
-            <div className="hardware-placeholder">
+        <div className={styles['hardware-card']}>
+          <div className={styles['hardware-icon']}>
+            <div className={styles['hardware-placeholder']}>
               [Mini PC Icon]
             </div>
           </div>
-          <h3 className="hardware-title">Mini PCs</h3>
-          <ul className="hardware-specs">
+          <h3 className={styles['hardware-title']}>Mini PCs</h3>
+          <ul className={styles['hardware-specs']}>
             <li>Intel NUC compatible</li>
             <li>AMD mini PC support</li>
             <li>Compact form factor</li>

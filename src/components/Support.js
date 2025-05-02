@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Support.module.css';
 
 const Support = () => {
   const [formData, setFormData] = useState({
@@ -41,29 +42,29 @@ const Support = () => {
   ];
 
   return (
-    <section className="support-section">
-      <h2 className="section-title">Support & FAQ</h2>
-      <p className="tagline-sub">
+    <section className={styles['support-section']}>
+      <h2 className={styles['section-title']}>Support & FAQ</h2>
+      <p className={styles['tagline-sub']}>
         Need help? We're here for you. Check our FAQ or reach out to our support team.
       </p>
 
-      <div className="support-container">
-        <div className="faq-section">
-          <h3 className="support-subtitle">Frequently Asked Questions</h3>
-          <div className="faq-list">
+      <div className={styles['support-container']}>
+        <div className={styles['faq-section']}>
+          <h3 className={styles['support-subtitle']}>Frequently Asked Questions</h3>
+          <div className={styles['faq-list']}>
             {faqItems.map((item, index) => (
-              <div key={index} className="faq-item">
-                <h4 className="faq-question">{item.question}</h4>
-                <p className="faq-answer">{item.answer}</p>
+              <div key={index} className={styles['faq-item']}>
+                <h4 className={styles['faq-question']}>{item.question}</h4>
+                <p className={styles['faq-answer']}>{item.answer}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="contact-section">
-          <h3 className="support-subtitle">Contact Support</h3>
-          <form onSubmit={handleSubmit} className="contact-form">
-            <div className="form-group">
+        <div className={styles['contact-section']}>
+          <h3 className={styles['support-subtitle']}>Contact Support</h3>
+          <form onSubmit={handleSubmit} className={styles['contact-form']}>
+            <div className={styles['form-group']}>
               <input
                 type="text"
                 name="name"
@@ -73,7 +74,7 @@ const Support = () => {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <input
                 type="email"
                 name="email"
@@ -83,7 +84,7 @@ const Support = () => {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <input
                 type="text"
                 name="subject"
@@ -93,7 +94,7 @@ const Support = () => {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <textarea
                 name="message"
                 placeholder="Your Message"
@@ -102,7 +103,7 @@ const Support = () => {
                 required
               />
             </div>
-            <button type="submit" className="submit-button">
+            <button type="submit" className={styles['submit-button']}>
               Send Message
             </button>
           </form>
