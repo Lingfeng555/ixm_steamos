@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header';
-import Features from './components/Features';
-import Performance from './components/Performance';
-import Hardware from './components/Hardware';
-import Support from './components/Support';
+import Header from './components/header/Header';
+import Features from './components/features/Features';
+import Performance from './components/performance/Performance';
+import Hardware from './components/hardware/Hardware';
+import Support from './components/support/Support';
 
 function App() {
   return (
