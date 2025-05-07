@@ -2,6 +2,7 @@
   padding: 4rem 2rem;
   margin: 2rem auto;
   max-width: 1200px;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .support-container {
@@ -9,6 +10,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   margin-top: 2rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .support-subtitle {
@@ -16,12 +18,14 @@
   font-size: 1.8rem;
   margin-bottom: 2rem;
   text-align: left;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .faq-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .faq-item {
@@ -30,22 +34,26 @@
   padding: 1.5rem;
   text-align: left;
   transition: transform 0.2s, box-shadow 0.2s;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .faq-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(102, 192, 244, 0.2);
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .faq-question {
   color: #66c0f4;
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .faq-answer {
   color: #c7d5e0;
   line-height: 1.6;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .contact-form {
@@ -53,10 +61,12 @@
   padding: 2rem;
   border-radius: 12px;
   text-align: left;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .form-group {
   margin-bottom: 1.5rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .form-group input,
@@ -68,11 +78,13 @@
   border-radius: 4px;
   color: #ffffff;
   font-size: 1rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .form-group textarea {
   min-height: 150px;
   resize: vertical;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .form-group input:focus,
@@ -80,6 +92,7 @@
   outline: none;
   border-color: #ffffff;
   box-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .submit-button {
@@ -92,15 +105,18 @@
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   width: 100%;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .submit-button:hover {
   transform: scale(1.02);
   box-shadow: 0 0 20px rgba(102, 192, 244, 0.4);
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
   .support-container {
     grid-template-columns: 1fr;
+    font-family: 'Motiva Sans', sans-serif;
   }
 }

@@ -2,6 +2,7 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .section-title {
@@ -9,6 +10,7 @@
   font-size: 2.5rem;
   margin: 3rem 0 2rem;
   text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .chart-container {
@@ -16,6 +18,7 @@
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem 0;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .chart {
@@ -25,6 +28,7 @@
   height: 300px;
   gap: 2rem;
   padding: 1rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .chart-bar {
@@ -33,6 +37,7 @@
   border-radius: 8px 8px 0 0;
   position: relative;
   transition: height 1s ease;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .chart-label {
@@ -41,6 +46,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: #c7d5e0;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .chart-value {
@@ -50,10 +56,12 @@
   transform: translateX(-50%);
   color: #66c0f4;
   font-weight: bold;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .chart-caption {
   color: #c7d5e0;
   margin-top: 3rem;
   font-size: 1.1rem;
+  font-family: 'Motiva Sans', sans-serif;
 }

@@ -5,6 +5,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .feature-card {
@@ -12,20 +13,24 @@
   border-radius: 8px;
   padding: 1.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(102, 192, 244, 0.2);
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .feature-title {
   color: #66c0f4;
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .feature-description {
   color: #c7d5e0;
   line-height: 1.6;
+  font-family: 'Motiva Sans', sans-serif;
 }

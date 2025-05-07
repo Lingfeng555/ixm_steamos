@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #171a21;
   color: #ffffff;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .steam-header {
@@ -12,6 +13,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .section-title {
@@ -19,6 +21,7 @@
   font-size: 2.5rem;
   margin: 3rem 0 2rem;
   text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .cta-button {
@@ -32,6 +35,7 @@
   transition: transform 0.2s, box-shadow 0.2s;
   margin-top: 2rem;
   text-decoration: none;
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .cta-button:hover {
