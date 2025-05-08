@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  background-color: #171a21;
+  background-color: #352866;
   color: #ffffff;
   font-family: 'Motiva Sans', sans-serif;
 }
 
 .steam-header {
-  background: linear-gradient(180deg, #171a21 0%, #1b2838 100%);
+  background: linear-gradient(180deg, #352866 0%, #1b2838 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
 }
 
 .section-title {
-  color: #66c0f4;
+  color: #8f60b3;
   font-size: 2.5rem;
   margin: 3rem 0 2rem;
   text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
@@ -25,7 +25,7 @@
 }
 
 .cta-button {
-  background: linear-gradient(to right, #66c0f4, #1b2838);
+  background: linear-gradient(to right, #8f60b3, #1b2838);
   color: white;
   border: none;
   padding: 1rem 2rem;

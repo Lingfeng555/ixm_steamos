@@ -1,7 +1,7 @@
 .steam-logo {
   width: 200px;
   margin-bottom: 2rem;
-  filter: drop-shadow(0 0 10px #66c0f4);
+  filter: drop-shadow(0 0 10px #8f60b3);
   font-family: 'Motiva Sans', sans-serif;
 }
 
@@ -9,7 +9,7 @@
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #66c0f4;
+  color: #8f60b3;
   text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
   font-family: 'Motiva Sans', sans-serif;
 }
@@ -24,7 +24,7 @@
 
 .tagline {
   font-size: 2rem;
-  color: #66c0f4;
+  color: #8f60b3;
   margin: 2rem 0;
   text-shadow: 0 0 15px rgba(102, 192, 244, 0.4);
   font-weight: 500;

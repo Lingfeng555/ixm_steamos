@@ -34,7 +34,7 @@
 
 .hardware-placeholder {
   background: rgba(102, 192, 244, 0.1);
-  border: 2px dashed #66c0f4;
+  border: 2px dashed #8f60b3;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -42,14 +42,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #66c0f4;
+  color: #8f60b3;
   font-size: 0.9rem;
   text-align: center;
   font-family: 'Motiva Sans', sans-serif;
 }
 
 .hardware-title {
-  color: #66c0f4;
+  color: #8f60b3;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -73,7 +73,7 @@
 
 .hardware-specs li:before {
   content: "•";
-  color: #66c0f4;
+  color: #8f60b3;
   position: absolute;
   left: 0;
   top: 0.5rem;

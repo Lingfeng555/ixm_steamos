@@ -22,7 +22,7 @@
   font-family: 'Motiva Sans', sans-serif;
   font-size: 2rem;
   margin: 0 0 1rem 0;
-  color: #66c0f4;
+  color: #8f60b3;
   text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
 }
 
@@ -65,7 +65,7 @@
   position: absolute;
   width: 4px;
   height: 100%;
-  background-color: #66c0f4;
+  background-color: #8f60b3;
   box-shadow: 0 0 10px rgba(102, 192, 244, 0.5);
 }
 
@@ -73,7 +73,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: #66c0f4;
+  background-color: #8f60b3;
   border: 3px solid #ffffff;
   border-radius: 50%;
   top: 50%;
@@ -104,7 +104,7 @@
 }
 
 .labelLeft {
-  color: #66c0f4;
+  color: #8f60b3;
 }
 
 .labelRight {

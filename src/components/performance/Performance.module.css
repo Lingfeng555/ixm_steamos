@@ -6,7 +6,7 @@
 }
 
 .section-title {
-  color: #66c0f4;
+  color: #8f60b3;
   font-size: 2.5rem;
   margin: 3rem 0 2rem;
   text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
@@ -33,7 +33,7 @@
 
 .chart-bar {
   width: 100px;
-  background: linear-gradient(to top, #66c0f4, #1b2838);
+  background: linear-gradient(to top, #8f60b3, #1b2838);
   border-radius: 8px 8px 0 0;
   position: relative;
   transition: height 1s ease;
@@ -54,7 +54,7 @@
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  color: #66c0f4;
+  color: #8f60b3;
   font-weight: bold;
   font-family: 'Motiva Sans', sans-serif;
 }
