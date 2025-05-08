@@ -4,6 +4,7 @@ import Features from './components/features/Features';
 import Performance from './components/performance/Performance';
 import Hardware from './components/hardware/Hardware';
 import Support from './components/support/Support';
+import RayTracingComparison from './components/raytracing/RayTracingComparison';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Features />
         <Performance />
+        <RayTracingComparison />
         <Hardware />
         <Support />
         <a href="#download" className="cta-button">

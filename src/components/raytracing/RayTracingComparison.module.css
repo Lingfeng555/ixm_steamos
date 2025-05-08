@@ -1,0 +1,112 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+  background: rgba(23, 26, 33, 0.95);
+}
+
+.comparisonWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.textContent {
+  flex: 0 0 300px;
+  color: white;
+  text-align: left;
+}
+
+.textContent h2 {
+  font-family: 'Motiva Sans', sans-serif;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: #66c0f4;
+  text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+}
+
+.sliderWrapper {
+  flex: 1;
+  position: relative;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  cursor: ew-resize;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.sliderLine {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #66c0f4;
+  box-shadow: 0 0 10px rgba(102, 192, 244, 0.5);
+}
+
+.sliderButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #66c0f4;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.labels {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.labelLeft, .labelRight {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-family: 'Motiva Sans', sans-serif;
+  font-weight: bold;
+}
+
+.labelLeft {
+  color: #66c0f4;
+}
+
+.labelRight {
+  color: #c7d5e0;
+}
