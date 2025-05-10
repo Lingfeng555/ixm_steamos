@@ -42,7 +42,7 @@ const Support = () => {
   ];
 
   return (
-    <section className={styles['support-section']}>
+    <section id="support" className={styles['support-section']}>
       <h2 className={styles['section-title']}>Support & FAQ</h2>
       <p className={styles['tagline-sub']}>
         Need help? We're here for you. Check our FAQ or reach out to our support team.

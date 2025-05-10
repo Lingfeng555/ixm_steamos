@@ -3,7 +3,7 @@ import styles from './Performance.module.css';
 
 const Performance = () => {
   return (
-    <section className={styles['performance-section']}>
+    <section id="performance" className={styles['performance-section']}>
       <h2 className={styles['section-title']}>Performance Improvements</h2>
       <div className={styles['chart-container']}>
         <div className={styles.chart}>

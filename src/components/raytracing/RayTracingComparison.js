@@ -12,7 +12,7 @@ const RayTracingComparison = () => {
   }, []);
 
   return (
-    <section className={styles.container}>
+    <section id="raytracing" className={styles.container}>
       <div className={styles.comparisonWrapper}>
         <div className={styles.textContent}>
           <h2>Ray Tracing Optimization on SteamOS</h2>

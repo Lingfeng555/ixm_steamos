@@ -29,11 +29,39 @@
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.navLinks li a:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #66c0f4;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .navLinks li a:hover {
   color: #66c0f4;
+}
+
+.navLinks li a:hover:after {
+  width: 80%;
+}
+
+.navLinks li a.active {
+  color: #66c0f4;
+  background: rgba(102, 192, 244, 0.1);
+}
+
+.navLinks li a.active:after {
+  width: 80%;
 }
 
 .ctaButton {

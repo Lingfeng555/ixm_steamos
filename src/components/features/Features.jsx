@@ -3,7 +3,7 @@ import styles from './Features.module.css';
 
 const Features = () => {
   return (
-    <div className={styles['features-grid']}>
+    <div id="features" className={styles['features-grid']}>
       <div className={styles['feature-card']}>
         <h3 className={styles['feature-title']}>Universal Compatibility</h3>
         <p className={styles['feature-description']}>

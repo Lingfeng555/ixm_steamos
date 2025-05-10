@@ -3,7 +3,7 @@ import styles from './Hardware.module.css';
 
 const Hardware = () => {
   return (
-    <section className={styles['hardware-section']}>
+    <section id="hardware" className={styles['hardware-section']}>
       <h2 className={styles['section-title']}>Supported Hardware</h2>
       <p className={styles['tagline-sub']}>
         From powerful gaming rigs to pocket-sized devices - Your games, your way
