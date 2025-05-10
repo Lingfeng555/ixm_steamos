@@ -112,7 +112,23 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className={styles.downloadButton}>
+      <div className={styles.actionButtons}>
+        <a 
+          href="https://store.steampowered.com/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className={styles.externalButton}
+        >
+          Steam Store
+        </a>
+        <a 
+          href="https://www.steamdeck.com/es/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className={styles.externalButton}
+        >
+          Steam Deck
+        </a>
         <a href="#download" className={styles.ctaButton} onClick={(e) => scrollToSection(e, 'download')}>
           Download
         </a>
