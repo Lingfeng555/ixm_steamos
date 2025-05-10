@@ -5,10 +5,12 @@ import Performance from './components/performance/Performance';
 import Hardware from './components/hardware/Hardware';
 import Support from './components/support/Support';
 import RayTracingComparison from './components/raytracing/RayTracingComparison';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <header className="steam-header">
         <Header />
         <Features />
