@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(to right, rgba(23, 26, 33, 0.95), rgba(27, 40, 56, 0.95));
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  position: relative;
+  perspective: 1000px;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.3s ease;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 0 2rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.3;
+  transform: scale(0.8) translateX(-100px);
+  will-change: transform, opacity;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide.next {
+  opacity: 0.7;
+  transform: scale(0.9) translateX(50px) perspective(1000px) rotateY(-10deg);
+}
+
+.slide.previous {
+  opacity: 0.7;
+  transform: scale(0.9) translateX(-50px) perspective(1000px) rotateY(10deg);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.imageContainer {
+  flex: 1.2;
+  position: relative;
+}
+
+.showcaseImage {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(102, 192, 244, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showcaseImage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(102, 192, 244, 0.4);
+}
+
+.textContent {
+  flex: 0.8;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #66c0f4 0%, #8f60b3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+  font-family: 'Motiva Sans', sans-serif;
+}
+
+.description {
+  color: #c7d5e0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureList li {
+  color: #c7d5e0;
+  padding: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.featureList li:before {
+  content: "✓";
+  color: #66c0f4;
+  position: absolute;
+  left: 0.5rem;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(102, 192, 244, 0.3);
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #66c0f4;
+  transform: scale(1.2);
+}
+
+@media (max-width: 968px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .textContent {
+    order: -1;
+  }
+
+  .title {
+    text-align: center;
+  }
+}

@@ -17,7 +17,7 @@ const Navbar = () => {
 
       // Set a new timeout to check scroll position
       scrollTimeout.current = setTimeout(() => {
-        const sections = ['features', 'performance', 'gaming', 'raytracing', 'distro', 'hardware', 'support'];
+        const sections = ['features', 'performance', 'showcase', 'hardware', 'support'];
         const navbarHeight = 74;
         
         const current = sections.find(section => {
@@ -76,10 +76,8 @@ const Navbar = () => {
         {[
           { id: 'features', text: 'Features' },
           { id: 'performance', text: 'Performance' },
-          { id: 'gaming', text: 'Gaming Mode' },
-          { id: 'distro', text: 'Linux Integration' },
+          { id: 'showcase', text: 'Showcase' },
           { id: 'hardware', text: 'Hardware' },
-          { id: 'raytracing', text: 'Ray Tracing' },
           { id: 'support', text: 'Support' }
         ].map(({ id, text }) => (
           <li key={id}>

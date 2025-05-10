@@ -4,9 +4,7 @@ import Features from './components/features/Features';
 import Performance from './components/performance/Performance';
 import Hardware from './components/hardware/Hardware';
 import Support from './components/support/Support';
-import RayTracingComparison from './components/raytracing/RayTracingComparison';
-import DistroIntegration from './components/distro/DistroIntegration';
-import GamingMode from './components/gaming/GamingMode';
+import ShowcaseCarousel from './components/showcase/ShowcaseCarousel';
 import Navbar from './components/navbar/Navbar';
 
 function App() {
@@ -17,9 +15,7 @@ function App() {
         <Header />
         <Features />
         <Performance />
-        <GamingMode />
-        <RayTracingComparison />
-        <DistroIntegration />
+        <ShowcaseCarousel />
         <Hardware />
         <Support />
         <a href="#download" className="cta-button">
