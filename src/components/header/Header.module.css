@@ -1,8 +1,32 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
 .steam-logo {
-  width: 200px;
-  margin-bottom: 2rem;
+  width: 300px;
   filter: drop-shadow(0 0 10px #8f60b3);
+  transition: transform 0.3s ease;
   font-family: 'Motiva Sans', sans-serif;
+}
+
+.steam-logo:hover {
+  transform: scale(1.05);
+}
+
+.contentContainer {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title {

@@ -3,6 +3,7 @@
   background-color: #352866;
   color: #ffffff;
   font-family: 'Motiva Sans', sans-serif;
+  padding-top: 74px; /* This accounts for the navbar height + padding */
 }
 
 .steam-header {
