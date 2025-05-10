@@ -6,6 +6,7 @@ import Hardware from './components/hardware/Hardware';
 import Support from './components/support/Support';
 import ShowcaseCarousel from './components/showcase/ShowcaseCarousel';
 import Navbar from './components/navbar/Navbar';
+import RayTracingComparison from './components/raytracing/RayTracingComparison';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Navbar />
       <header className="steam-header">
         <Header />
+        <ShowcaseCarousel />
         <Features />
         <Performance />
-        <ShowcaseCarousel />
+        <RayTracingComparison />
         <Hardware />
         <Support />
         <a href="#download" className="cta-button">
