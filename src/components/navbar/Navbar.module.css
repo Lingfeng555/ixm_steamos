@@ -11,9 +11,28 @@
   z-index: 1000;
 }
 
+.logo {
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  outline: none;
+}
+
+.logo:hover:not(.clicked) img,
+.logo:focus:not(.clicked) img {
+  transform: scale(1.05);
+  filter: brightness(1.2) drop-shadow(0 0 8px rgba(102, 192, 244, 0.4));
+}
+
+.logo.clicked img {
+  transform: scale(1);
+  filter: none;
+  transition: none;
+}
+
 .logo img {
   height: 40px;
   width: auto;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .navLinks {

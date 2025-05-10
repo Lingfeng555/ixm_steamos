@@ -5,6 +5,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('');
   const isManualScroll = useRef(true);
   const scrollTimeout = useRef(null);
+  const [isLogoClicked, setIsLogoClicked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,9 +68,29 @@ const Navbar = () => {
     }
   };
 
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    setIsLogoClicked(true);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setActiveSection('');
+    
+    // Reset the logo state after scroll animation completes
+    setTimeout(() => {
+      setIsLogoClicked(false);
+    }, 1000);
+  };
+
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
+      <div 
+        className={`${styles.logo} ${isLogoClicked ? styles.clicked : ''}`} 
+        onClick={scrollToTop} 
+        role="button" 
+        tabIndex={0}
+      >
         <img src="/steam-logo.png" alt="Steam Logo" />
       </div>
       <ul className={styles.navLinks}>
