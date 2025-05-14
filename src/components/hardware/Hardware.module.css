@@ -29,7 +29,16 @@
 
 .hardware-icon {
   margin-bottom: 1.5rem;
+  text-align: center;
   font-family: 'Motiva Sans', sans-serif;
+}
+
+.hardware-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 
 .hardware-placeholder {

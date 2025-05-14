@@ -11,9 +11,7 @@ const Hardware = () => {
       <div className={styles['hardware-grid']}>
         <div className={styles['hardware-card']}>
           <div className={styles['hardware-icon']}>
-            <div className={styles['hardware-placeholder']}>
-              [Raspberry Pi Icon]
-            </div>
+            <img src="rasberry.png" alt="Raspberry Pi" />
           </div>
           <h3 className={styles['hardware-title']}>Raspberry Pi</h3>
           <ul className={styles['hardware-specs']}>
@@ -26,9 +24,7 @@ const Hardware = () => {
 
         <div className={styles['hardware-card']}>
           <div className={styles['hardware-icon']}>
-            <div className={styles['hardware-placeholder']}>
-              [Jetson Icon]
-            </div>
+            <img src="Jetson.png" alt="NVIDIA Jetson" />
           </div>
           <h3 className={styles['hardware-title']}>NVIDIA Jetson</h3>
           <ul className={styles['hardware-specs']}>
@@ -41,9 +37,7 @@ const Hardware = () => {
 
         <div className={styles['hardware-card']}>
           <div className={styles['hardware-icon']}>
-            <div className={styles['hardware-placeholder']}>
-              [Mini PC Icon]
-            </div>
+            <img src="intel_nuc.png" alt="Intel NUC" />
           </div>
           <h3 className={styles['hardware-title']}>Mini PCs</h3>
           <ul className={styles['hardware-specs']}>
