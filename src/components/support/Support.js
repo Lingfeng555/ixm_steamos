@@ -8,6 +8,28 @@ const Support = () => {
     subject: '',
     message: ''
   });
+  const [showCommunityReports, setShowCommunityReports] = useState(false);
+
+  const communityReports = [
+    {
+      id: 1,
+      issue: "Game Controller not detected in Proton games",
+      status: "Resolved",
+      response: "This has been fixed in the latest SteamOS update. Please update your system."
+    },
+    {
+      id: 2,
+      issue: "Screen tearing in certain games",
+      status: "In Progress",
+      response: "We're working on a VSync implementation that will address this issue."
+    },
+    {
+      id: 3,
+      issue: "Audio crackling in some titles",
+      status: "Under Investigation",
+      response: "Our team is investigating this issue. As a temporary fix, try setting the sample rate to 48000Hz."
+    }
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,6 +69,34 @@ const Support = () => {
       <p className={styles['tagline-sub']}>
         Need help? We're here for you. Check our FAQ or reach out to our support team.
       </p>
+
+      <button 
+        className={styles['community-button']}
+        onClick={() => setShowCommunityReports(!showCommunityReports)}
+      >
+        {showCommunityReports ? 'Hide Community Reports' : 'View Community Reports'}
+      </button>
+
+      {showCommunityReports && (
+        <div className={styles['faq-list']}>
+          {communityReports.map((report) => (
+            <div key={report.id} className={styles['faq-item']}>
+              <h4 className={styles['faq-question']}>
+                {report.issue} 
+                <span style={{ 
+                  color: report.status === 'Resolved' ? '#66c0f4' : 
+                         report.status === 'In Progress' ? '#8f60b3' : '#c7d5e0',
+                  marginLeft: '1rem',
+                  fontSize: '0.9rem'
+                }}>
+                  {report.status}
+                </span>
+              </h4>
+              <p className={styles['faq-answer']}>{report.response}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className={styles['support-container']}>
         <div className={styles['faq-section']}>

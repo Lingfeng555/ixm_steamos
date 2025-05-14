@@ -63,18 +63,28 @@
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
   gap: 1.5rem;
+}
+
+.formGroup {
+  width: 100%;
 }
 
 .formGroup input {
   width: 100%;
-  padding: 0.8rem;
+  padding: 1rem 1.2rem;
   background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #8f60b3;
-  border-radius: 4px;
+  border: 2px solid #8f60b3;
+  border-radius: 8px;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .formGroup input:focus {

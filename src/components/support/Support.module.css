@@ -114,6 +114,25 @@
   font-family: 'Motiva Sans', sans-serif;
 }
 
+.community-button {
+  background: linear-gradient(to right, #66c0f4, #8f60b3);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.community-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 192, 244, 0.3);
+}
+
 @media (max-width: 768px) {
   .support-container {
     grid-template-columns: 1fr;
