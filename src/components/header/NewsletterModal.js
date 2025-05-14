@@ -67,33 +67,36 @@ const NewsletterModal = ({ isOpen, onClose }) => {
           
           <div className={styles.checkboxGroup}>
             <h3>I'm interested in:</h3>
-            <label>
+            <div>
               <input
                 type="checkbox"
+                id="gaming"
                 name="interests"
                 value="gaming"
                 onChange={handleChange}
               />
-              Gaming News
-            </label>
-            <label>
+              <label htmlFor="gaming">Gaming News</label>
+            </div>
+            <div>
               <input
                 type="checkbox"
+                id="hardware"
                 name="interests"
                 value="hardware"
                 onChange={handleChange}
               />
-              Hardware Updates
-            </label>
-            <label>
+              <label htmlFor="hardware">Hardware Updates</label>
+            </div>
+            <div>
               <input
                 type="checkbox"
+                id="features"
                 name="interests"
                 value="features"
                 onChange={handleChange}
               />
-              New Features
-            </label>
+              <label htmlFor="features">New Features</label>
+            </div>
           </div>
           
           <button type="submit" className={styles.submitButton}>
