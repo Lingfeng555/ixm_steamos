@@ -18,7 +18,7 @@ const Navbar = () => {
 
       // Set a new timeout to check scroll position
       scrollTimeout.current = setTimeout(() => {
-        const sections = ['showcase', 'features', 'performance', 'raytracing', 'hardware', 'support'];
+        const sections = ['features', 'performance', 'showcase', 'hardware', 'support'];
         const navbarHeight = 74;
         
         const current = sections.find(section => {
@@ -95,10 +95,9 @@ const Navbar = () => {
       </div>
       <ul className={styles.navLinks}>
         {[
-          { id: 'showcase', text: 'Showcase' },
           { id: 'features', text: 'Features' },
           { id: 'performance', text: 'Performance' },
-          { id: 'raytracing', text: 'Ray Tracing' },
+          { id: 'showcase', text: 'Showcase' },
           { id: 'hardware', text: 'Hardware' },
           { id: 'support', text: 'Support' }
         ].map(({ id, text }) => (
