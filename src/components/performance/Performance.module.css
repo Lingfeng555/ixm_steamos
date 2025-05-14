@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  height: fit-content;
 }
 
 .chart-container {
@@ -31,16 +32,24 @@
   border-radius: 12px;
   padding: 2rem;
   font-family: 'Motiva Sans', sans-serif;
+  height: 400px; /* Set fixed height for all chart containers */
+  display: flex;
+  flex-direction: column;
 }
 
 .chart {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 300px;
   gap: 2rem;
   padding: 1rem;
   font-family: 'Motiva Sans', sans-serif;
+}
+
+.line-chart {
+  flex: 1;
+  width: 100%;
 }
 
 .chart-bar {
@@ -75,7 +84,7 @@
 
 .chart-caption {
   color: #c7d5e0;
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
   text-align: center;
   font-family: 'Motiva Sans', sans-serif;
@@ -85,20 +94,13 @@
   background: rgba(27, 40, 56, 0.8);
   border-radius: 12px;
   padding: 2rem;
-  height: 100%;
+  height: 895px; /* Match the height of chart containers */
+  display: flex;
+  flex-direction: column;
 }
 
 .cpu-title {
   color: #8f60b3;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.cpu-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
   list-style: none;
   padding: 0;
 }
@@ -120,10 +122,33 @@
 }
 
 .cpu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 1rem;
+  max-height: calc(100vh - 300px);
+  scrollbar-width: thin;
+  scrollbar-color: #66c0f4 rgba(27, 40, 56, 0.8);
+}
+
+.cpu-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cpu-grid::-webkit-scrollbar-track {
+  background: rgba(27, 40, 56, 0.8);
+  border-radius: 4px;
+}
+
+.cpu-grid::-webkit-scrollbar-thumb {
+  background: #66c0f4;
+  border-radius: 4px;
+}
+
+.cpu-grid::-webkit-scrollbar-thumb:hover {
+  background: #8f60b3;
 }
 
 .cpu-card {
@@ -132,6 +157,7 @@
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(102, 192, 244, 0.1);
+  min-height: 150px;
 }
 
 .cpu-card:hover {
