@@ -88,64 +88,67 @@ const Performance = () => {
   return (
     <section id="performance" className={styles['performance-section']}>
       <h2 className={styles['section-title']}>Performance Improvements</h2>
-      <div className={styles['charts-container']}>
-        <div className={styles['chart-container']}>
-          <div className={styles.chart}>
-            <div className={styles['chart-bar']} style={{ height: '60%' }}>
-              <span className={styles['chart-label']}>Windows</span>
-              <span className={styles['chart-value']}>60 FPS</span>
+      
+      <div className={styles['performance-content']}>
+        <div className={styles['charts-column']}>
+          <div className={styles['chart-container']}>
+            <div className={styles.chart}>
+              <div className={styles['chart-bar']} style={{ height: '60%' }}>
+                <span className={styles['chart-label']}>Windows</span>
+                <span className={styles['chart-value']}>60 FPS</span>
+              </div>
+              <div className={styles['chart-bar']} style={{ height: '90%' }}>
+                <span className={styles['chart-label']}>SteamOS</span>
+                <span className={styles['chart-value']}>90 FPS</span>
+              </div>
             </div>
-            <div className={styles['chart-bar']} style={{ height: '90%' }}>
-              <span className={styles['chart-label']}>SteamOS</span>
-              <span className={styles['chart-value']}>90 FPS</span>
-            </div>
+            <p className={styles['chart-caption']}>Average FPS in Popular Games</p>
           </div>
-          <p className={styles['chart-caption']}>Average FPS in Popular Games</p>
+
+          <div className={styles['chart-container']}>
+            <div className={styles.chart}>
+              <div className={styles['chart-bar']} style={{ height: '85%' }}>
+                <span className={styles['chart-label']}>Windows</span>
+                <span className={styles['chart-value']}>3.4 GB</span>
+              </div>
+              <div className={styles['chart-bar']} style={{ height: '45%' }}>
+                <span className={styles['chart-label']}>SteamOS</span>
+                <span className={styles['chart-value']}>1.8 GB</span>
+              </div>
+            </div>
+            <p className={styles['chart-caption']}>RAM Usage at Idle</p>
+          </div>
         </div>
 
-        <div className={styles['chart-container']}>
-          <div className={styles.chart}>
-            <div className={styles['chart-bar']} style={{ height: '85%' }}>
-              <span className={styles['chart-label']}>Windows</span>
-              <span className={styles['chart-value']}>3.4 GB</span>
-            </div>
-            <div className={styles['chart-bar']} style={{ height: '45%' }}>
-              <span className={styles['chart-label']}>SteamOS</span>
-              <span className={styles['chart-value']}>1.8 GB</span>
-            </div>
+        <div className={styles['cpu-support']}>
+          <h3 className={styles['cpu-title']}>Legacy CPU Performance on SteamOS</h3>
+          <div className={styles['cpu-grid']}>
+            {cpuData.map((cpu, index) => (
+              <div key={index} className={styles['cpu-card']}>
+                <div className={styles['cpu-name']}>
+                  {cpu.name}
+                  <span className={styles['cpu-year']}>{cpu.year}</span>
+                </div>
+                <div className={styles['cpu-specs']}>
+                  {cpu.specs}
+                </div>
+                <div className={styles['performance-stats']}>
+                  <div className={styles.stat}>
+                    <div className={styles['stat-value']}>{cpu.performance.fps}</div>
+                    <div className={styles['stat-label']}>Avg FPS</div>
+                  </div>
+                  <div className={styles.stat}>
+                    <div className={styles['stat-value']}>{cpu.performance.ram}GB</div>
+                    <div className={styles['stat-label']}>RAM Usage</div>
+                  </div>
+                  <div className={styles.stat}>
+                    <div className={styles['stat-value']}>{cpu.performance.temp}°C</div>
+                    <div className={styles['stat-label']}>Temp</div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <p className={styles['chart-caption']}>RAM Usage at Idle</p>
-        </div>
-      </div>
-
-      <div className={styles['cpu-support']}>
-        <h3 className={styles['cpu-title']}>Legacy CPU Performance on SteamOS</h3>
-        <div className={styles['cpu-grid']}>
-          {cpuData.map((cpu, index) => (
-            <div key={index} className={styles['cpu-card']}>
-              <div className={styles['cpu-name']}>
-                {cpu.name}
-                <span className={styles['cpu-year']}>{cpu.year}</span>
-              </div>
-              <div className={styles['cpu-specs']}>
-                {cpu.specs}
-              </div>
-              <div className={styles['performance-stats']}>
-                <div className={styles.stat}>
-                  <div className={styles['stat-value']}>{cpu.performance.fps}</div>
-                  <div className={styles['stat-label']}>Avg FPS</div>
-                </div>
-                <div className={styles.stat}>
-                  <div className={styles['stat-value']}>{cpu.performance.ram}GB</div>
-                  <div className={styles['stat-label']}>RAM Usage</div>
-                </div>
-                <div className={styles.stat}>
-                  <div className={styles['stat-value']}>{cpu.performance.temp}°C</div>
-                  <div className={styles['stat-label']}>Temp</div>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

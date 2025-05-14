@@ -1,6 +1,6 @@
 .performance-section {
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   font-family: 'Motiva Sans', sans-serif;
 }
@@ -13,11 +13,17 @@
   font-family: 'Motiva Sans', sans-serif;
 }
 
-.charts-container {
+.performance-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin: 2rem 0;
+  align-items: start;
+}
+
+.charts-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .chart-container {
@@ -79,7 +85,7 @@
   background: rgba(27, 40, 56, 0.8);
   border-radius: 12px;
   padding: 2rem;
-  margin-top: 2rem;
+  height: 100%;
 }
 
 .cpu-title {
@@ -179,4 +185,10 @@
   color: #8f60b3;
   font-size: 0.8rem;
   opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .performance-content {
+    grid-template-columns: 1fr;
+  }
 }
