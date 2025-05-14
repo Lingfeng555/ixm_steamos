@@ -1,0 +1,58 @@
+.steamLoginContainer {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.orDivider {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #c7d5e0;
+}
+
+.orDivider::before,
+.orDivider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: rgba(102, 192, 244, 0.2);
+}
+
+.orDivider::before {
+  left: 0;
+}
+
+.orDivider::after {
+  right: 0;
+}
+
+.steamLoginButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background: rgba(23, 26, 33, 0.9);
+  border: 1px solid rgba(102, 192, 244, 0.3);
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.steamLoginButton:hover {
+  background: rgba(102, 192, 244, 0.1);
+  border-color: rgba(102, 192, 244, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 192, 244, 0.2);
+}
+
+.steamIcon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}

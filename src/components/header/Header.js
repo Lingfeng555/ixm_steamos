@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.css';
+import NewsletterModal from './NewsletterModal';
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className={styles.headerContainer}>
       <div className={styles.logoContainer}>
@@ -18,7 +21,17 @@ const Header = () => {
         <p className={styles['tagline-sub']}>
           From your living room to your pocket device - Gaming without boundaries
         </p>
+        <button 
+          className={styles.newsletterButton}
+          onClick={() => setIsModalOpen(true)}
+        >
+          Subscribe to Updates
+        </button>
       </div>
+      <NewsletterModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 };
