@@ -1,6 +1,6 @@
 .performance-section {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: 'Motiva Sans', sans-serif;
 }
@@ -13,11 +13,17 @@
   font-family: 'Motiva Sans', sans-serif;
 }
 
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
 .chart-container {
   background: rgba(27, 40, 56, 0.8);
   border-radius: 12px;
   padding: 2rem;
-  margin: 2rem 0;
   font-family: 'Motiva Sans', sans-serif;
 }
 
@@ -47,6 +53,7 @@
   transform: translateX(-50%);
   color: #c7d5e0;
   font-family: 'Motiva Sans', sans-serif;
+  white-space: nowrap;
 }
 
 .chart-value {
@@ -57,11 +64,119 @@
   color: #8f60b3;
   font-weight: bold;
   font-family: 'Motiva Sans', sans-serif;
+  white-space: nowrap;
 }
 
 .chart-caption {
   color: #c7d5e0;
   margin-top: 3rem;
   font-size: 1.1rem;
+  text-align: center;
   font-family: 'Motiva Sans', sans-serif;
+}
+
+.cpu-support {
+  background: rgba(27, 40, 56, 0.8);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.cpu-title {
+  color: #8f60b3;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cpu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.cpu-item {
+  background: rgba(23, 26, 33, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #c7d5e0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cpu-item:before {
+  content: "✓";
+  color: #66c0f4;
+  font-size: 1.1rem;
+}
+
+.cpu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cpu-card {
+  background: rgba(23, 26, 33, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(102, 192, 244, 0.1);
+}
+
+.cpu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(102, 192, 244, 0.2);
+  border-color: rgba(102, 192, 244, 0.3);
+}
+
+.cpu-name {
+  color: #66c0f4;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cpu-year {
+  color: #8f60b3;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.cpu-specs {
+  color: #c7d5e0;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.performance-stats {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(102, 192, 244, 0.1);
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-value {
+  color: #66c0f4;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  color: #8f60b3;
+  font-size: 0.8rem;
+  opacity: 0.9;
 }
