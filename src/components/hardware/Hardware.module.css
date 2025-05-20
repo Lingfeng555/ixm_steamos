@@ -1,90 +1,89 @@
 .hardware-section {
-  padding: 4rem 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
-  font-family: 'Motiva Sans', sans-serif;
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  font-family: 'Motiva Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-card {
-  background: rgba(27, 40, 56, 0.8);
-  border-radius: 12px;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: 'Motiva Sans', sans-serif;
+    background: rgba(27, 40, 56, 0.8);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(102, 192, 244, 0.2);
-  font-family: 'Motiva Sans', sans-serif;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(102, 192, 244, 0.2);
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-icon {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-family: 'Motiva Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-icon img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin: 0 auto;
-  display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
 }
 
 .hardware-placeholder {
-  background: rgba(102, 192, 244, 0.1);
-  border: 2px dashed #8f60b3;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8f60b3;
-  font-size: 0.9rem;
-  text-align: center;
-  font-family: 'Motiva Sans', sans-serif;
+    background: rgba(102, 192, 244, 0.1);
+    border: 2px dashed #8f60b3;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8f60b3;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-title {
-  color: #8f60b3;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-family: 'Motiva Sans', sans-serif;
+    color: #8f60b3;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-specs {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #c7d5e0;
-  font-family: 'Motiva Sans', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #c7d5e0;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-specs li {
-  padding: 0.5rem 0;
-  position: relative;
-  padding-left: 1.5rem;
-  font-family: 'Motiva Sans', sans-serif;
+    padding: 0.5rem 0;
+    position: relative;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .hardware-specs li:before {
-  content: "•";
-  color: #8f60b3;
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  font-family: 'Motiva Sans', sans-serif;
+    content: "•";
+    color: #8f60b3;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: "Motiva Sans", sans-serif;
 }

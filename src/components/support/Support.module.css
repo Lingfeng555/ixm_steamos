@@ -1,180 +1,180 @@
 .support-section {
-  padding: 4rem 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
-  font-family: 'Motiva Sans', sans-serif;
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .support-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 2rem;
-  font-family: 'Motiva Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .support-subtitle {
-  color: #8f60b3;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  text-align: left;
-  font-family: 'Motiva Sans', sans-serif;
+    color: #8f60b3;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  font-family: 'Motiva Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .faq-item {
-  background: rgba(27, 40, 56, 0.8);
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: left;
-  transition: transform 0.2s, box-shadow 0.2s;
-  font-family: 'Motiva Sans', sans-serif;
+    background: rgba(27, 40, 56, 0.8);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .faq-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(102, 192, 244, 0.2);
-  font-family: 'Motiva Sans', sans-serif;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 192, 244, 0.2);
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .faq-question {
-  color: #8f60b3;
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  font-family: 'Motiva Sans', sans-serif;
+    color: #8f60b3;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .faq-answer {
-  color: #c7d5e0;
-  line-height: 1.6;
-  font-family: 'Motiva Sans', sans-serif;
+    color: #c7d5e0;
+    line-height: 1.6;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .contact-form {
-  background: rgba(27, 40, 56, 0.8);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: left;
-  font-family: 'Motiva Sans', sans-serif;
+    background: rgba(27, 40, 56, 0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
-  font-family: 'Motiva Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #8f60b3;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: 'Motiva Sans', sans-serif;
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #8f60b3;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .form-group textarea {
-  min-height: 150px;
-  resize: vertical;
-  font-family: 'Motiva Sans', sans-serif;
+    min-height: 150px;
+    resize: vertical;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: #ffffff;
-  box-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
-  font-family: 'Motiva Sans', sans-serif;
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .submit-button {
-  background: linear-gradient(to right, #8f60b3, #1b2838);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  width: 100%;
-  font-family: 'Motiva Sans', sans-serif;
+    background: linear-gradient(to right, #8f60b3, #1b2838);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .submit-button:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(102, 192, 244, 0.4);
-  font-family: 'Motiva Sans', sans-serif;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(102, 192, 244, 0.4);
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .community-button {
-  background: linear-gradient(to right, #66c0f4, #8f60b3);
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 2rem;
-  text-decoration: none;
-  display: inline-block;
+    background: linear-gradient(to right, #66c0f4, #8f60b3);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .community-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 192, 244, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 192, 244, 0.3);
 }
 
 .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;  /* Increased gap between buttons */
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(102, 192, 244, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Increased gap between buttons */
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(102, 192, 244, 0.1);
 }
 
 .social-button {
-  background: rgba(27, 40, 56, 0.8);
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  padding: 1.2rem;  /* Increased padding */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(27, 40, 56, 0.8);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    padding: 1.2rem; /* Increased padding */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .social-button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-  background: rgba(102, 192, 244, 0.1);
+    transform: translateY(-2px);
+    opacity: 0.9;
+    background: rgba(102, 192, 244, 0.1);
 }
 
 .social-icon {
-  width: 32px;  /* Increased icon size */
-  height: 32px;  /* Increased icon size */
-  object-fit: contain;
-  filter: brightness(0.9);
+    width: 48px; /* Increased icon size */
+    height: 48px; /* Increased icon size */
+    object-fit: contain;
+    filter: brightness(0.9);
 }
 
 .social-button:hover .social-icon {
-  filter: brightness(1);
+    filter: brightness(1);
 }
 
 @media (max-width: 768px) {
-  .support-container {
-    grid-template-columns: 1fr;
-    font-family: 'Motiva Sans', sans-serif;
-  }
+    .support-container {
+        grid-template-columns: 1fr;
+        font-family: "Motiva Sans", sans-serif;
+    }
 }
