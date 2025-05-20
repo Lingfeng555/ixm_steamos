@@ -128,7 +128,7 @@
   gap: 1rem;
   overflow-y: auto;
   padding-right: 1rem;
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 100px);
   scrollbar-width: thin;
   scrollbar-color: #66c0f4 rgba(27, 40, 56, 0.8);
 }
