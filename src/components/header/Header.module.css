@@ -1,93 +1,94 @@
 .headerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem 2rem 1rem;
 }
 
 .logoContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 4rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
 }
 
 .steam-logo {
-  width: 300px;
-  filter: drop-shadow(0 0 10px #8f60b3);
-  transition: transform 0.3s ease;
-  font-family: 'Motiva Sans', sans-serif;
+    width: 300px;
+    filter: drop-shadow(0 0 10px #8f60b3);
+    transition: transform 0.3s ease;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .steam-logo:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .contentContainer {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #8f60b3;
-  text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
-  font-family: 'Motiva Sans', sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #8f60b3;
+    text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  color: #c7d5e0;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  font-family: 'Motiva Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #c7d5e0;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .tagline {
-  font-size: 2rem;
-  color: #8f60b3;
-  margin: 2rem 0;
-  text-shadow: 0 0 15px rgba(102, 192, 244, 0.4);
-  font-weight: 500;
-  max-width: 800px;
-  margin: 2rem auto;
-  font-family: 'Motiva Sans', sans-serif;
+    font-size: 2rem;
+    color: #8f60b3;
+    margin: 2rem 0;
+    text-shadow: 0 0 15px rgba(102, 192, 244, 0.4);
+    font-weight: 500;
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .tagline-sub {
-  font-size: 1.3rem;
-  color: #c7d5e0;
-  margin: 1rem 0 3rem;
-  font-style: italic;
-  max-width: 600px;
-  margin: 1rem auto 3rem;
-  opacity: 0.9;
-  font-family: 'Motiva Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #c7d5e0;
+    margin: 1rem 0 3rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 1rem auto 3rem;
+    opacity: 0.9;
+    font-family: "Motiva Sans", sans-serif;
 }
 
 .newsletterButton {
-  background: linear-gradient(to right, #8f60b3, #66c0f4);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 2rem;
-  font-family: 'Motiva Sans', sans-serif;
-  box-shadow: 0 4px 15px rgba(102, 192, 244, 0.2);
+    background: linear-gradient(to right, #8f60b3, #66c0f4);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    font-family: "Motiva Sans", sans-serif;
+    box-shadow: 0 4px 15px rgba(102, 192, 244, 0.2);
 }
 
 .newsletterButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 192, 244, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 192, 244, 0.4);
 }
 
 .newsletterButton:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(102, 192, 244, 0.3);
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 192, 244, 0.3);
 }
