@@ -133,6 +133,45 @@
   box-shadow: 0 5px 15px rgba(102, 192, 244, 0.3);
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;  /* Increased gap between buttons */
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(102, 192, 244, 0.1);
+}
+
+.social-button {
+  background: rgba(27, 40, 56, 0.8);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  padding: 1.2rem;  /* Increased padding */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  background: rgba(102, 192, 244, 0.1);
+}
+
+.social-icon {
+  width: 32px;  /* Increased icon size */
+  height: 32px;  /* Increased icon size */
+  object-fit: contain;
+  filter: brightness(0.9);
+}
+
+.social-button:hover .social-icon {
+  filter: brightness(1);
+}
+
 @media (max-width: 768px) {
   .support-container {
     grid-template-columns: 1fr;

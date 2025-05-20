@@ -156,6 +156,34 @@ const Support = () => {
             <button type="submit" className={styles['submit-button']}>
               Send Message
             </button>
+            <div className={styles['social-links']}>
+              <a
+                href="https://discord.com/invite/steam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles['social-button']}
+                aria-label="Join our Discord"
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/discord_logo.png`}
+                  alt="Discord"
+                  className={styles['social-icon']}
+                />
+              </a>
+              <a
+                href="https://www.reddit.com/r/SteamOS/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles['social-button']}
+                aria-label="Join our Reddit"
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/reddit_logo.png`}
+                  alt="Reddit"
+                  className={styles['social-icon']}
+                />
+              </a>
+            </div>
           </form>
         </div>
       </div>
